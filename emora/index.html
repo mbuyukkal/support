@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support</title>
+<style>
+  :root{
+    --ink:#1c1c1a;
+    --paper:#faf9f6;
+    --line:#dedad2;
+    --accent:#2f5d50;
+    --muted:#6b6a63;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Georgia, 'Times New Roman', serif;
+    line-height:1.65;
+  }
+  .wrap{
+    max-width:720px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+  header{
+    border-bottom:2px solid var(--ink);
+    padding-bottom:20px;
+    margin-bottom:32px;
+  }
+  h1{
+    font-size:28px;
+    margin:0 0 6px;
+    letter-spacing:0.2px;
+  }
+  .sub{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+  }
+  nav.langs{
+    display:flex;
+    gap:0;
+    margin-top:22px;
+    font-family:Helvetica, Arial, sans-serif;
+    border:1px solid var(--ink);
+    width:fit-content;
+  }
+  nav.langs button{
+    background:none;
+    border:none;
+    padding:8px 16px;
+    font-size:13px;
+    letter-spacing:0.5px;
+    cursor:pointer;
+    color:var(--ink);
+    border-right:1px solid var(--ink);
+    font-family:inherit;
+  }
+  nav.langs button:last-child{border-right:none;}
+  nav.langs button.active{
+    background:var(--ink);
+    color:var(--paper);
+  }
+  .lang-panel{display:none;}
+  .lang-panel.active{display:block;}
+  h2{
+    font-size:18px;
+    margin:32px 0 10px;
+    color:var(--accent);
+  }
+  p{margin:0 0 14px; font-size:16px;}
+  .meta{
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    margin-bottom:28px;
+  }
+  ul{margin:0 0 14px; padding-left:22px;}
+  li{margin-bottom:6px;}
+  a{color:var(--accent);}
+  footer{
+    margin-top:48px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-family:Helvetica, Arial, sans-serif;
+    font-size:12px;
+    color:var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="sub">Support</div>
+    <h1>Emora</h1>
+    <nav class="langs">
+      <button data-lang="en" class="active">EN</button>
+      <button data-lang="tr">TR</button>
+      <button data-lang="es">ES</button>
+      <button data-lang="de">DE</button>
+    </nav>
+  </header>
+
+  <!-- ENGLISH -->
+  <div class="lang-panel active" id="panel-en">
+    <p>Need help with Emora? Here are answers to common questions. If you don't find what you're looking for, email us directly at the bottom of this page.</p>
+
+    <h2>Is my data private?</h2>
+    <p>Yes. All your mood entries, notes, and PIN are stored only on your device. We don't operate a server and never see your data. See our Privacy Policy for details.</p>
+
+    <h2>I forgot my PIN — how do I get back in?</h2>
+    <p>Currently there is no PIN recovery option. To regain access, you'll need to delete and reinstall the App, which will also erase your existing mood entries (since they're stored locally, tied to that installation). We recommend memorizing your PIN carefully.</p>
+
+    <h2>How do I delete all my data?</h2>
+    <p>Open Settings inside the App and tap "Reset All Data." This permanently deletes every mood entry from your device.</p>
+
+    <h2>How do I change the app's language?</h2>
+    <p>Emora follows your iPhone's system language (Settings → General → Language & Region on your device). Emora supports English, Turkish, Spanish, and German.</p>
+
+    <h2>How do I switch between light and dark mode?</h2>
+    <p>Open Settings inside the App and tap "Theme Mode" to toggle between light and dark.</p>
+
+    <h2>Why do I see ads?</h2>
+    <p>Ads help keep Emora free. You'll occasionally see interstitial ads, and you can optionally watch a rewarded video in the "Bored" screen to unlock bonus activity suggestions.</p>
+
+    <h2>How do I stop the daily reminder notification?</h2>
+    <p>Go to your iPhone's Settings → Emora → Notifications, and turn notifications off.</p>
+
+    <h2>Contact</h2>
+    <p>Still need help? Email us at mbuyukkal@gmail.com and we'll get back to you.</p>
+  </div>
+
+  <!-- TURKISH -->
+  <div class="lang-panel" id="panel-tr">
+    <p>Emora ile ilgili yardıma mı ihtiyacın var? Sık sorulan soruların cevapları aşağıda. Aradığını bulamazsan, sayfanın altındaki adresten bize doğrudan e-posta atabilirsin.</p>
+
+    <h2>Verilerim gizli mi?</h2>
+    <p>Evet. Tüm duygu kayıtların, notların ve PIN'in yalnızca cihazında saklanır. Herhangi bir sunucu işletmiyoruz ve verilerini asla görmüyoruz. Ayrıntılar için Gizlilik Politikamıza bakabilirsin.</p>
+
+    <h2>PIN'imi unuttum — nasıl giriş yapabilirim?</h2>
+    <p>Şu anda bir PIN kurtarma seçeneği bulunmuyor. Erişimi geri kazanmak için uygulamayı silip yeniden yüklemen gerekir; bu işlem mevcut duygu kayıtlarını da siler (çünkü veriler yerel olarak o kuruluma bağlıdır). PIN'ini dikkatlice hatırlamanı öneririz.</p>
+
+    <h2>Tüm verilerimi nasıl silerim?</h2>
+    <p>Uygulama içinde Ayarlar'ı aç ve "Tüm Verileri Sıfırla"ya dokun. Bu, cihazındaki tüm duygu kayıtlarını kalıcı olarak siler.</p>
+
+    <h2>Uygulamanın dilini nasıl değiştiririm?</h2>
+    <p>Emora, iPhone'unun sistem dilini takip eder (cihazında Ayarlar → Genel → Dil ve Bölge). Emora İngilizce, Türkçe, İspanyolca ve Almanca destekliyor.</p>
+
+    <h2>Açık/koyu mod arasında nasıl geçiş yaparım?</h2>
+    <p>Uygulama içinde Ayarlar'ı aç ve açık/koyu mod arasında geçiş yapmak için "Tema Modu"na dokun.</p>
+
+    <h2>Neden reklam görüyorum?</h2>
+    <p>Reklamlar, Emora'nın ücretsiz kalmasına yardımcı olur. Ara sıra geçiş reklamları görürsün, ayrıca "Canım Sıkılıyor" ekranında isteğe bağlı bir ödüllü video izleyerek bonus aktivite önerilerinin kilidini açabilirsin.</p>
+
+    <h2>Günlük hatırlatma bildirimini nasıl kapatırım?</h2>
+    <p>iPhone'unun Ayarlar → Emora → Bildirimler bölümüne git ve bildirimleri kapat.</p>
+
+    <h2>İletişim</h2>
+    <p>Hâlâ yardıma mı ihtiyacın var? Bize mbuyukkal@gmail.com adresinden e-posta at, sana geri döneriz.</p>
+  </div>
+
+  <!-- SPANISH -->
+  <div class="lang-panel" id="panel-es">
+    <p>¿Necesitas ayuda con Emora? Aquí tienes respuestas a las preguntas más frecuentes. Si no encuentras lo que buscas, escríbenos directamente a la dirección al final de esta página.</p>
+
+    <h2>¿Son privados mis datos?</h2>
+    <p>Sí. Todos tus registros de estado de ánimo, notas y tu PIN se almacenan únicamente en tu dispositivo. No operamos ningún servidor y nunca vemos tus datos. Consulta nuestra Política de Privacidad para más detalles.</p>
+
+    <h2>Olvidé mi PIN, ¿cómo vuelvo a entrar?</h2>
+    <p>Actualmente no hay una opción de recuperación de PIN. Para recuperar el acceso, deberás eliminar y reinstalar la App, lo que también borrará tus registros de estado de ánimo existentes (ya que se almacenan localmente, vinculados a esa instalación). Te recomendamos memorizar bien tu PIN.</p>
+
+    <h2>¿Cómo elimino todos mis datos?</h2>
+    <p>Abre Ajustes dentro de la App y toca "Restablecer Todos los Datos." Esto elimina permanentemente todos los registros de tu dispositivo.</p>
+
+    <h2>¿Cómo cambio el idioma de la app?</h2>
+    <p>Emora sigue el idioma del sistema de tu iPhone (Ajustes → General → Idioma y Región en tu dispositivo). Emora es compatible con inglés, turco, español y alemán.</p>
+
+    <h2>¿Cómo cambio entre modo claro y oscuro?</h2>
+    <p>Abre Ajustes dentro de la App y toca "Modo de Tema" para alternar entre claro y oscuro.</p>
+
+    <h2>¿Por qué veo anuncios?</h2>
+    <p>Los anuncios ayudan a mantener Emora gratis. Verás anuncios intersticiales ocasionalmente, y opcionalmente puedes ver un video con recompensa en la pantalla "Estoy aburrido" para desbloquear sugerencias de actividades adicionales.</p>
+
+    <h2>¿Cómo detengo la notificación de recordatorio diario?</h2>
+    <p>Ve a Ajustes de tu iPhone → Emora → Notificaciones, y desactívalas.</p>
+
+    <h2>Contacto</h2>
+    <p>¿Aún necesitas ayuda? Escríbenos a mbuyukkal@gmail.com y te responderemos.</p>
+  </div>
+
+  <!-- GERMAN -->
+  <div class="lang-panel" id="panel-de">
+    <p>Brauchst du Hilfe mit Emora? Hier findest du Antworten auf häufige Fragen. Falls du nicht findest, wonach du suchst, schreib uns direkt an die Adresse am Ende dieser Seite.</p>
+
+    <h2>Sind meine Daten privat?</h2>
+    <p>Ja. Alle deine Stimmungseinträge, Notizen und deine PIN werden ausschließlich auf deinem Gerät gespeichert. Wir betreiben keinen Server und sehen deine Daten niemals. Details findest du in unserer Datenschutzerklärung.</p>
+
+    <h2>Ich habe meine PIN vergessen — wie komme ich wieder rein?</h2>
+    <p>Derzeit gibt es keine Möglichkeit zur PIN-Wiederherstellung. Um den Zugriff wiederzuerlangen, musst du die App löschen und neu installieren — dabei werden auch deine bestehenden Stimmungseinträge gelöscht (da sie lokal und an diese Installation gebunden gespeichert sind). Wir empfehlen, dir deine PIN gut zu merken.</p>
+
+    <h2>Wie lösche ich alle meine Daten?</h2>
+    <p>Öffne die Einstellungen in der App und tippe auf "Alle Daten zurücksetzen." Dies löscht dauerhaft alle Stimmungseinträge von deinem Gerät.</p>
+
+    <h2>Wie ändere ich die Sprache der App?</h2>
+    <p>Emora folgt der Systemsprache deines iPhones (Einstellungen → Allgemein → Sprache & Region auf deinem Gerät). Emora unterstützt Englisch, Türkisch, Spanisch und Deutsch.</p>
+
+    <h2>Wie wechsle ich zwischen hellem und dunklem Modus?</h2>
+    <p>Öffne die Einstellungen in der App und tippe auf "Design-Modus", um zwischen hell und dunkel zu wechseln.</p>
+
+    <h2>Warum sehe ich Werbung?</h2>
+    <p>Werbung hilft, Emora kostenlos zu halten. Du siehst gelegentlich Interstitial-Anzeigen und kannst optional ein Rewarded-Video im Bildschirm "Mir ist langweilig" ansehen, um zusätzliche Aktivitätsvorschläge freizuschalten.</p>
+
+    <h2>Wie stoppe ich die tägliche Erinnerungsbenachrichtigung?</h2>
+    <p>Gehe zu den Einstellungen deines iPhones → Emora → Benachrichtigungen, und schalte sie aus.</p>
+
+    <h2>Kontakt</h2>
+    <p>Brauchst du noch Hilfe? Schreib uns an mbuyukkal@gmail.com, wir melden uns bei dir.</p>
+  </div>
+
+  <footer>
+    <div>Emora · Support / Destek / Soporte / Support</div>
+  </footer>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('nav.langs button');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.lang-panel').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('panel-' + btn.dataset.lang).classList.add('active');
+    });
+  });
+</script>
+
+</body>
+</html>
